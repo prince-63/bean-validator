@@ -1,6 +1,6 @@
 {
   "name": "bean-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A http request validation ",
   "main": "src/index.js",
   "type": "commonjs",
