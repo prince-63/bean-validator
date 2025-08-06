@@ -17,8 +17,8 @@ const { addRule } = require("../core/registry");
  *        - {Object} [params]: Optional parameters for the validator.
  *
  * @example
- * const { defineField } = require("validator");
- * const { NOT_EMPTY, EMAIL } = require("validator");
+ * const { defineField } = require("bean-validator");
+ * const { NOT_EMPTY, EMAIL } = require("bean-validator");
  *
  * class UserDTO {
  *   constructor(name, email) {

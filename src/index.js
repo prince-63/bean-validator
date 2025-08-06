@@ -8,6 +8,6 @@
  * - Validation constants — e.g. `DIGITS`, `EMAIL`, `NOT_EMPTY`, etc.
  *
  * Example:
- * const { defineField, validate, EMAIL } = require("validator");
+ * const { defineField, validate, EMAIL } = require("bean-validator");
  */
 module.exports = require("./interfaces/validationService");

@@ -14,7 +14,7 @@ const { validators } = require("../core/validators");
  *        - Must return: `true` if the value is valid, `false` otherwise.
  *
  * @example
- * const { registerValidator, defineField, validate } = require("js-bean-validator");
+ * const { registerValidator, defineField, validate } = require("bean-validator");
  *
  * // 1. Register a validator that checks if a string starts with "A"
  * registerValidator("startsWithA", (value) => typeof value === "string" && value.startsWith("A"));

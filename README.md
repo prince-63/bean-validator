@@ -1,24 +1,24 @@
-**Request Validation for JavaScript** — inspired by Jakarta Bean Validation (JSR 380) and Hibernate Validator constraints.
+> Request Validation for JavaScript — inspired by Jakarta Bean Validation (JSR 380) and Hibernate Validator constraints.
 
-This library allows you to define validation rules **at runtime** directly in your DTO classes without decorators, without TypeScript, and without boilerplate.
+This package allows you to define validation rules at runtime directly in your DTO classes without decorators, without TypeScript, and without boilerplate.
 
 #### Installation
 ```bash
-npm install validator
+npm install bean-validator
 ````
 
 #### Features
 
-* **No decorators** — works in pure JavaScript
-* **Clean Architecture** — separates rules from validation logic
-* **Supports Jakarta + Hibernate constraints**
-* **Runtime definition** like Lombok’s annotations in Java
-* **Custom validators** supported
+* No decorators, works in pure JavaScript
+* Clean Architecture, separates rules from validation logic
+* Supports Jakarta + Hibernate constraints
+* Runtime definition like Lombok’s annotations in Java
+* Custom validators supported
 
 #### Basic Usage
 
 ```js
-const { defineField, validate, NOT_EMPTY, EMAIL } = require("validator");
+const { defineField, validate, NOT_EMPTY, EMAIL } = require("bean-validator");
 
 class UserDTO {
   constructor(name, email) {
@@ -72,7 +72,7 @@ console.log(validate(user));
 Some validators require parameters. You pass them via `params` in the rule:
 
 ```js
-const { defineField, validate, DIGITS, RANGE } = require("validator");
+const { defineField, validate, DIGITS, RANGE } = require("bean-validator");
 
 class ProductDTO {
   constructor(price, rating) {
@@ -92,8 +92,8 @@ console.log(validate(product));
 #### Creating Custom Validators
 
 ```js
-const { defineField, validate } = require("validator");
-const { registerValidator } = require("validator");
+const { defineField, validate } = require("bean-validator");
+const { registerValidator } = require("bean-validator");
 
 // 1. Register custom validator
 registerValidator("startsWithA", (value) => value?.startsWith("A"));
@@ -110,3 +110,7 @@ class CategoryDTO {
 const category = new CategoryDTO("Banana");
 console.log(validate(category));
 ```
+
+#### License
+
+MIT

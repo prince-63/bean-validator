@@ -1,7 +1,7 @@
 {
-  "name": "validator",
+  "name": "bean-validator",
   "version": "1.0.0",
-  "description": "A Lombok-like bean validation library for JavaScript",
+  "description": "A http request validation ",
   "main": "src/index.js",
   "type": "commonjs",
   "keywords": [
