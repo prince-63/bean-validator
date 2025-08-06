@@ -1,5 +1,5 @@
 {
-  "name": "js-bean-validator",
+  "name": "validator",
   "version": "1.0.0",
   "description": "A Lombok-like bean validation library for JavaScript",
   "main": "src/index.js",
